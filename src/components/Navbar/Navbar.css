@@ -1,5 +1,80 @@
-nav{
+.Navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: inset;
- }
+
+}
+
+.leftDiv {
+    flex: 30%;
+}
+
+.rightDiv {
+    flex: 70%;
+}
+
+.CartAndMenuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.DivCartWidget {
+    display: flex;
+    max-width: 200px;
+    justify-content: right;
+    margin-right: 10px;
+
+}
+
+#hamburger_checkbox {
+    display: none;
+}
+
+
+.hamburger_label {
+    display: inline-block;
+    color: #151515;
+    margin: 0px;
+}
+
+.MenuBottonList {
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #a72626;
+    position: relative;
+    min-width: 300px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+
+nav .Navbar .MenuBottonList>li {
+    flex-basis: 100%;
+}
+
+input:checked+.MenuBottonList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+
+
+@media all and (min-width: 601px) {
+    .hamburger_label {
+        display: none;
+    }
+
+    .CartAndMenuContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .MenuBottonList {
+        display: flex;
+    }
+}

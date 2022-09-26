@@ -3,20 +3,24 @@ import CartWidget from '../CartWidget/CartWidget.js'
 
 const Navbar = () => {
     return (
-        <nav>
-            <div>
-                <h1>Nombre Proyecto</h1>
+        <nav class="Navbar">
+            <div class="leftDiv">
+                <h1> Distriber</h1>
             </div>
-            <div>
-                <button>Boton 1</button>
-                <button>Boton 2</button>
-                <button>Boton 3</button>
+            <div class="rightDiv">
+                <div class="CartAndMenuContainer">
+                    <CartWidget />
+                    <div>
+                        <label class="hamburger_label" for="hamburger_checkbox">&#9776;</label>
+                        <input type="checkbox" name="" id="hamburger_checkbox"></input>
+                        <ul class="MenuBottonList">
+                            <li> <botton>Boton 1</botton></li>
+                            <li> <botton>Boton 1</botton></li>
+                            <li> <botton>Boton 1</botton></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        
-            <div>
-                <CartWidget />
-            </div>
-
         </nav>
     )
 }
