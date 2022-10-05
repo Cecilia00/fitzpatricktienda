@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar.js';
-import ItemListContainer from './components/ItemListContainer/ItemListContainet'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -10,7 +10,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element = {<ItemListContainer />} />
-          <Route path='/detalle/:productId' element = {<ItemDetailContainer />} />
+          <Route path='/category/:categoryId' element = {<ItemListContainer />} />
+          <Route path='/item/:productId' element = {<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
     </div>

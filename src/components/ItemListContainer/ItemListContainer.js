@@ -11,14 +11,15 @@ const ItemListContainer = () => {
             setProducts(products)
         })
     }, [])
+    console.log (products)
 
     return (
         <div>
             <h1>hola</h1>
             <ItemList products={products}/>
-
         </div>
     )
+
 }
 
 export default ItemListContainer 
