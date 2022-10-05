@@ -2,33 +2,33 @@ const products = [
     {
         id: "001",
         nombre: "Queso",
-        categoría: "Fiambres",
+        categoria: "fiambres",
         precio: "500",
     },
     {
         id: "002",
         nombre: "Jamón",
-        categoría: "Fiambres",
+        categoria: "fiambres",
         precio: "700",
     },
     {
         id: "003",
         nombre: "Harina",
-        categoría: "Cereales",
+        categoria: "cereales",
         precio: "100",
     },
     {
         id: "004",
         nombre: "Lentejas",
-        categoría: "Legumbres",
+        categoria: "legumbres",
         precio: "200",
     }
 ]
 
-export const getProducts = () => {
+export const getProducts = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
+            resolve(categoryId? products.filter(prod => prod.categoria === categoryId) : products)
         }, 1000)
     })
 }
