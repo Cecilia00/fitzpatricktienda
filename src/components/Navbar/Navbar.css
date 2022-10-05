@@ -42,7 +42,6 @@
     display: none;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #a72626;
     position: relative;
     min-width: 300px;
     padding: 0px;
@@ -62,6 +61,11 @@ input:checked+.MenuBottonList {
     top: 5%;
 }
 
+.navbar_button{
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
 
 @media all and (min-width: 601px) {
     .hamburger_label {
@@ -76,5 +80,11 @@ input:checked+.MenuBottonList {
 
     .MenuBottonList {
         display: flex;
+        
+    }
+
+    .navbar_button{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }
+
