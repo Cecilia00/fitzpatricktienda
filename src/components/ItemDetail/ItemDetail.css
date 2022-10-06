@@ -1,0 +1,13 @@
+.detailContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 10px;
+    background-color: beige;
+}
+
+.productContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

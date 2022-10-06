@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 const Item = ({prod}) => {
     return (
         <div>
-            <h1>{prod.nombre}</h1>
-            <h2> {prod.precio}</h2>
+            <h3>{prod.nombre}</h3>
+            <h4> ${prod.precio}</h4>
             <Link to={`/item/${prod.id}`} > ver detalle</Link>
         </div>
         

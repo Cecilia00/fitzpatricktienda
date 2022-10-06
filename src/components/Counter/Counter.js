@@ -17,11 +17,11 @@ const Counter = () => {
         setCount(0)
     }
     return (
-        <div>
-            <h3>{count}</h3>
-            <button onClick={add}>Aumentar</button>
-            <button disabled={count>0 ? false : true} onClick={rest}>Disminuir</button>
-            <button onClick={reset}>Resetear</button>
+        <div className='counterContainer'>
+            <h4>{count}</h4>
+            <button onClick={add} className="counterButton">+</button>
+            <button disabled={count >0 ? false : true} onClick={rest} className="counterButton">-</button>
+            <button onClick={reset} className="counterButton">Resetear</button>
         </div>
     )
 }
