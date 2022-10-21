@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState ([])
+    const [error, setError] = useState (false)
     const [loading, setLoading] = useState (true)
 
     const {categoryId} = useParams()
@@ -14,19 +15,25 @@ const ItemListContainer = () => {
         setLoading (true)
         getProducts(categoryId).then(products => {
             setProducts(products)
-        }).finally(() =>{
+        }).catch (error =>{
+            setError(true)
+        }) .finally(() =>{
             setLoading(false)
         })
     }, [categoryId])
 
+
     if (loading){
-        return (<h1>Cargando</h1>)
+        return (<h2>Cargando</h2>)
     }
 
+    if (error) {
+        return (<h2> Ha ocurrido un error, por favor vuelva a intentarlo</h2>)
+    }
 
     return (
-        <div>
-            <h1>hola</h1>
+        <div className='ItemListContainerBox'>
+            <h2>Todos nuestros productos</h2>
             <ItemList products={products}/>
         </div>
     )

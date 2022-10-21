@@ -1,27 +1,48 @@
+
+
 const products = [
     {
         id: "001",
         nombre: "Queso",
         categoria: "fiambres",
+        descripcion: "Esto es una descripción",
         precio: "500",
+        unidadDeMedida: "kg",
+
     },
     {
         id: "002",
         nombre: "Jamón",
         categoria: "fiambres",
+        descripcion: "Esto es una descripción",
         precio: "700",
+        unidadDeMedida: "kg",
+
+
+
+
     },
     {
         id: "003",
         nombre: "Harina",
         categoria: "cereales",
+        descripcion: "Esto es una descripción",
         precio: "100",
+        unidadDeMedida: "kg",
+
+
+
     },
     {
         id: "004",
         nombre: "Lentejas",
         categoria: "legumbres",
+        descripcion: "Esto es una descripción",
         precio: "200",
+        unidadDeMedida: "kg",
+
+
+
     }
 ]
 

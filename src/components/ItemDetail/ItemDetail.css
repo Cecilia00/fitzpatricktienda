@@ -1,13 +1,68 @@
-.detailContainer{
+.detailContainer {
     display: flex;
     flex-flow: column;
+    justify-items: center;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: beige;
+    border: 1.5px solid #8C93A8;
+    border-radius: 15px;
+    margin: 3% 10%;
+    border-radius: 30px;
+    margin-top: 3%;
 }
 
-.productContainer{
+.productContainer {
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.finishSaleButton{
+    padding: 6px 12px;
+    margin: 15px 30%;
+    width: 40%;
+    border-radius: 7px;
+    background-color: white;
+    border: 2.5px solid  black;
+    box-shadow: rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/* .bottomContainer {
+    background-color: #CEFF1A;
+    border-radius: 25px 20px 0px 0px;
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    box-shadow: rgba(143, 152, 142, 0.15) 0px 8px 7px 15px;
+    /* rgba(60, 64, 67, 0.15)} */
+
+
+
+.ItemDetailDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 15px;
+    text-align: center;
+}
+
+.precioText {
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    .finishSaleButton{
+        padding: 6px 12px;
+        margin: 15px 40%;
+        width: 20%;
+        border-radius: 7px;
+        background-color: white;
+        border: 2.5px solid  black;
+        box-shadow: rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { getProduct } from "../../asyncMock"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import './ItemDetailContainer.css'
 
 
 const ItemDetailContainer = () => {
@@ -25,9 +26,9 @@ const ItemDetailContainer = () => {
     }
     else {
     return (
-        <div>
+        <>
             <ItemDetail product={product} />
-        </div>
+        </>
     )}
 
 

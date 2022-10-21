@@ -47,7 +47,6 @@
 
 .hamburger_label {
     display: inline-block;
-    color: #151515;
     margin: 0px;
 }
 
@@ -80,7 +79,7 @@ input:checked+.MenuBottonList {
     border-radius: 3px;
     padding: 10px 30px;
     color: white;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family:'Montserrat', sans-serif;
     text-decoration: none;
     font-weight: bolder;
 

@@ -1,0 +1,13 @@
+.ItemListBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .ItemListBox{
+        flex-direction: row;
+    }
+    
+    
+}
