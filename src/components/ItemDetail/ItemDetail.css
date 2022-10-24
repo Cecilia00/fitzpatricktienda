@@ -48,6 +48,9 @@
     font-weight: bold;
 }
 
+.EndSaleButton{
+    
+}
 @media screen and (min-width: 600px) {
     .finishSaleButton{
         margin: 15px 40%;
