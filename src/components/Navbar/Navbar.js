@@ -1,26 +1,28 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget.js'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from './assets/logo.svg'
+
+
 
 const Navbar = () => {
 
 
     return (
-        <nav class="Navbar">
-            <div class="leftDiv">
+        <nav className='Navbar'>
+            <div className='leftDiv'>
             <Link to={`/`}> <img src= {logo} className="logo"></img></Link>
             </div>
-            <div class="rightDiv">
-                <div class="CartAndMenuContainer">
+            <div className='rightDiv'>
+                <div className='CartAndMenuContainer'>
                     <CartWidget />
                     <div className='listContainer'>
-                        <label class="hamburger_label" for="hamburger_checkbox">&#9776;</label>
-                        <input type="checkbox" name="" id="hamburger_checkbox"></input>
-                        <ul class="MenuBottonList">
-                            <li> <Link to={`/category/fiambres`} className="navbar_link">Fiambres</Link></li>
-                            <li> <Link to={`/category/cereales`} className="navbar_link">Cereales</Link></li>
-                            <li> <Link to={`/category/legumbres`} className="navbar_link">Legumbres</Link></li>
+                        <label className='hamburger_label' htmlFor="hamburger_checkbox"></label>
+                        <input type='checkbox' name="" id="hamburger_checkbox"></input>
+                        <ul className="MenuBottonList">
+                            <li className='MenuLi'> <NavLink to={`/category/fiambres`} className={({isActive}) => isActive ?  "active_navbar_link" : "navbar_link"} >Fiambres </NavLink> </li>
+                            <li className='MenuLi'> <NavLink to={`/category/cereales`} className={({isActive}) => isActive ?  "active_navbar_link" : "navbar_link"}>Cereales</NavLink></li>
+                            <li className='MenuLi'> <NavLink to={`/category/legumbres`} className={({isActive}) => isActive ?  "active_navbar_link" : "navbar_link"}>Legumbres</NavLink></li>
                         </ul>
                     </div>
                 </div>

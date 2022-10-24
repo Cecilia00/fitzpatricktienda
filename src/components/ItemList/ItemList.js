@@ -3,11 +3,11 @@ import './ItemList.css'
 
 const ItemList = ({ products }) => {
     return (
-        <div className='ItemListBox'>
+        <ul className='ItemListBox' onClick={(e) => console.log(e)}>
             {products.map(prod => (
                 <Item key={prod.id} prod={prod} />
             ))}
-        </div>
+        </ul>
     )
 
     

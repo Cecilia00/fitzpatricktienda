@@ -1,4 +1,4 @@
-.ItemContainer{
+.ItemContainer {
     display: flex;
     background-color: #EFE9F4;
     flex-direction: column;
@@ -15,7 +15,14 @@
 }
 
 @media (min-width: 600px) {
-.ItemContainer{
-    padding: 40px;
-}
+    .ItemContainer {
+        padding: 40px;
+        margin-top: 15px;
+    }
+
+    .ItemContainer:hover {
+
+        transform: scale(1.15);
+
+    }
 }

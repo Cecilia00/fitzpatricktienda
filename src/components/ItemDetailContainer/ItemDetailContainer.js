@@ -5,7 +5,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.css'
 
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({setCart}) => {
     const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(true)
     const {productId} = useParams()
@@ -18,16 +18,15 @@ const ItemDetailContainer = () => {
             setLoading(false)
         })
 
-    }, [])
+    }, [productId])
 
-    console.log (product)
     if (loading) {
-        return <h1>Cargando</h1>
+        return <h2 className="Title">Cargando...</h2>
     }
     else {
     return (
         <>
-            <ItemDetail product={product} />
+            <ItemDetail {...product} setCart={setCart}/>
         </>
     )}
 

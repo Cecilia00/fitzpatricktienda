@@ -24,16 +24,16 @@ const ItemListContainer = () => {
 
 
     if (loading){
-        return (<h2>Cargando</h2>)
+        return (<h2 className='Title'>Cargando...</h2>)
     }
 
     if (error) {
-        return (<h2> Ha ocurrido un error, por favor vuelva a intentarlo</h2>)
+        return (<h2 className='Title'> Ha ocurrido un error, por favor vuelva a intentarlo</h2>)
     }
 
     return (
         <div className='ItemListContainerBox'>
-            <h2>Todos nuestros productos</h2>
+            <h2 className='Title'>Nuestros productos</h2>
             <ItemList products={products}/>
         </div>
     )

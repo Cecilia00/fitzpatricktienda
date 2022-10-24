@@ -1,11 +1,12 @@
 import './ItemCount.css'
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 
-const ItemCount = () => {
-    const [count, setCount] = useState(0)
+const ItemCount = ({stock, initial=0, onAdd}) => {
+    const [count, setCount] = useState(initial)
 
     const add = () => {
-        setCount(count + 1)
+    if (count < stock){
+        setCount(count + 1)}
     }
 
     const rest = () => {
@@ -22,10 +23,10 @@ const ItemCount = () => {
             <div className='modifyCuantityContainer'>
                 <button disabled={count > 0 ? false : true} onClick={rest} className="counterButton">-</button>
                 <h4 className='cuentaText'>{count}</h4>
-                <button onClick={add} className="counterButton">+</button>
+                <button onClick={(add)} className="counterButton">+</button>
             </div>
             <div>
-                <button onClick={reset} className="counterButton">Comprar</button>
+                <button className="counterButton" onClick={() => onAdd(count)}> Agregar al carrito</button>
             </div>
         </div>
     )

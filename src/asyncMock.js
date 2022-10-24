@@ -8,6 +8,7 @@ const products = [
         descripcion: "Esto es una descripción",
         precio: "500",
         unidadDeMedida: "kg",
+        stock: 15,
 
     },
     {
@@ -17,6 +18,8 @@ const products = [
         descripcion: "Esto es una descripción",
         precio: "700",
         unidadDeMedida: "kg",
+        stock: 15,
+
 
 
 
@@ -29,6 +32,8 @@ const products = [
         descripcion: "Esto es una descripción",
         precio: "100",
         unidadDeMedida: "kg",
+        stock: 15,
+
 
 
 
@@ -40,6 +45,8 @@ const products = [
         descripcion: "Esto es una descripción",
         precio: "200",
         unidadDeMedida: "kg",
+        stock: 15,
+
 
 
 

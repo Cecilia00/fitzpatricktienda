@@ -59,6 +59,8 @@
     padding: 0px;
     list-style-type: none;
     background-color: #014365;
+    padding: 10% 0% 20% 0%;
+    border-radius: 5px;
 }
 
 
@@ -74,6 +76,9 @@ input:checked+.MenuBottonList {
     top: 5%;
 }
 
+.MenuLi{
+    margin: 10px 0px;
+}
 .navbar_link{
     font-size: 1rem;
     border-radius: 3px;
@@ -83,6 +88,13 @@ input:checked+.MenuBottonList {
     text-decoration: none;
     font-weight: bolder;
 
+}
+
+.active_navbar_link{
+    text-decoration:underline;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
 }
 
 @media all and (min-width: 601px) {
@@ -99,9 +111,20 @@ input:checked+.MenuBottonList {
     .MenuBottonList {
         display: flex;
         align-items: flex-end;
-        margin: 0;
-        margin-top: 20px;
-        
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-around;        
+    }
+
+    .navbar_link{
+        padding: 5px 5px;
+    
+    }
+
+    .rightDiv{
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+
     }
 }
-
