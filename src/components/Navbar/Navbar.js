@@ -15,7 +15,8 @@ const Navbar = () => {
             </div>
             <div className='rightDiv'>
                 <div className='CartAndMenuContainer'>
-                    <CartWidget />
+                    
+                    <Link to='/cart'><CartWidget/></Link>
                     <div className='listContainer'>
                         <label className='hamburger_label' htmlFor="hamburger_checkbox"></label>
                         <input type='checkbox' name="" id="hamburger_checkbox"></input>

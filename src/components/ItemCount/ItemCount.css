@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-items: center;
 }
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
 .counterButton{
     padding: 6px 12px;
     margin: 15px 10px;
@@ -20,7 +25,8 @@
 .modifyCuantityContainer{
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-content: space-around;
+
 }
 
 .cuentaText{

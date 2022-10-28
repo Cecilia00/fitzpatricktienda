@@ -9,9 +9,6 @@ const CartWidget = () => {
     const {getTotalQuantity} = useContext (CartContext)
     const totalQuantity = getTotalQuantity()
 
-    console.log (totalQuantity)
-
-
     return (
         <div className='DivCartWidget'>
             <img id="BagImg" src = {bag} alt="imagen bolsa de compra" />

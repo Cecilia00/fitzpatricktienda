@@ -9,6 +9,7 @@ const products = [
         precio: "500",
         unidadDeMedida: "kg",
         stock: 15,
+        imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
@@ -19,10 +20,7 @@ const products = [
         precio: "700",
         unidadDeMedida: "kg",
         stock: 15,
-
-
-
-
+        imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
@@ -33,9 +31,7 @@ const products = [
         precio: "100",
         unidadDeMedida: "kg",
         stock: 15,
-
-
-
+        imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
@@ -46,9 +42,7 @@ const products = [
         precio: "200",
         unidadDeMedida: "kg",
         stock: 15,
-
-
-
+        imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     }
 ]

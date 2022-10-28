@@ -1,6 +1,6 @@
 .detailContainer {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -35,25 +35,58 @@
     color: white;
     transform: scale(1.03)
 }
-.ItemDetailDescription {
+.ItemImage{
+
+}
+.ItemName{
+    font-weight: 560;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.ItemlDescription {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 15px;
     text-align: center;
 }
 
-.precioText {
+.ItemPrice {
     text-align: center;
     align-self: center;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .EndSaleButton{
-    
+    padding: 6px 12px;
+    margin: 15px 10px;
+    border-radius: 7px;
+    background-color: white;
+    border: 2.5px solid  #014365;
+    box-shadow: rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; 
 }
 @media screen and (min-width: 600px) {
     .finishSaleButton{
         margin: 15px 40%;
         width: 20%;
+    }
+
+    .ItemImage{
+        width: 80%;
+    }
+    .ItemName{
+        font-weight: 560;
+        font-size: 2rem;
+    }
+    .ItemlDescription {
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+    
+    .ItemPrice {
+        font-size: 1.3rem;
     }
 }
