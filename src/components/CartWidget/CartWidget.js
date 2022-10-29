@@ -6,15 +6,21 @@ import { CartContext } from '../../context/CartContext'
 
 const CartWidget = () => {
 
-    const {getTotalQuantity} = useContext (CartContext)
+    const { getTotalQuantity, cart } = useContext(CartContext)
     const totalQuantity = getTotalQuantity()
 
-    return (
-        <div className='DivCartWidget'>
-            <img id="BagImg" src = {bag} alt="imagen bolsa de compra" />
-            {totalQuantity}
-        </div>
-    )
+    
+
+    if (totalQuantity > 0) {
+        return (
+            
+                <div className='DivCartWidget'>
+                    <img id="BagImg" src={bag} alt="imagen bolsa de compra" />
+                    {totalQuantity}
+                </div>
+            
+        )
+    }
 
 }
 

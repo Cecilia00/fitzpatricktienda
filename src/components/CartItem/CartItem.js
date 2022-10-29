@@ -1,37 +1,39 @@
 import './CartItem.css'
+import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-import { counter } from '@fortawesome/fontawesome-svg-core'
 
 
 const CartItem = ({ id, nombre, count, precio }) => {
-    const { removeItem } = useContext(CartContext)
+    const { removeItem, totalQuantity } = useContext(CartContext)
+
 
     const handleRemove = (id) => {
         removeItem(id)
     }
-
+    // if (totalQuantity = 0) {
+    //     return (
+    //         <div>
+    //             <h3>Tu carrito está vacío</h3>
+    //             <Link  to='/'>Agregar productos</Link>
+    //         </div>
+    //     )
+    // }
     return (
         <div>
-            <div >
                 <h3>
                     {nombre}
                 </h3>
-            </div>
-            <div>
                 <p>
                     Cantidad: {count}
                 </p>
                 <p>
                     Precio x Unidad: ${precio}
                 </p>
-            </div>           
-            <div>
-                 <p>
-                     Subtotal: ${precio * count}
-                 </p>
-                 <button onClick={() => handleRemove(id)}>X</button>
-            </div>
+                <p>
+                    Subtotal: ${precio * count}
+                </p>
+                <button onClick={() => handleRemove(id)}>X</button>
         </div>
     )
 }
