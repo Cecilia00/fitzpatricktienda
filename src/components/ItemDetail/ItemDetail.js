@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 
-const ItemDetail = ({ id, nombre, descripcion, precio, stock, unidadDeMedida, imagen }) => {
+const ItemDetail = ({ id, name, description, price, stock, measurementUnit, imagen }) => {
     const { addItem } = useContext(CartContext)
     const [quantityToAdd, setQuantityToAdd] = useState(0)
 
@@ -14,7 +14,7 @@ const ItemDetail = ({ id, nombre, descripcion, precio, stock, unidadDeMedida, im
         setQuantityToAdd(count)
 
         const productToAdd = {
-            id, nombre, precio, count, imagen
+            id, name, price, count, imagen, measurementUnit
         }
 
         addItem(productToAdd)
@@ -27,9 +27,9 @@ const ItemDetail = ({ id, nombre, descripcion, precio, stock, unidadDeMedida, im
                     <img className='ItemImage' src={imagen}></img>
                 </div>
                 <div>
-                    <h2 className='ItemName'>{nombre}</h2>
-                    <h5 className='ItemDescription'>{descripcion}</h5>
-                    <h4 className='ItemPrice'>${precio} por {unidadDeMedida}</h4>
+                    <h2 className='ItemName'>{name}</h2>
+                    <h5 className='ItemDescription'>{description}</h5>
+                    <h4 className='ItemPrice'>${price} por {measurementUnit}</h4>
 
                     <div>
                         {quantityToAdd === 0 ? (

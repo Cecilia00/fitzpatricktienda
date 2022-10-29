@@ -3,44 +3,44 @@
 const products = [
     {
         id: "001",
-        nombre: "Queso",
-        categoria: "fiambres",
-        descripcion: "Esto es una descripción",
-        precio: "500",
-        unidadDeMedida: "kg",
+        name: "Queso",
+        category: "fiambres",
+        description: "Esto es una descripción",
+        price: "500",
+        measurmentUnit: "kg",
         stock: 15,
         imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
         id: "002",
-        nombre: "Jamón",
-        categoria: "fiambres",
-        descripcion: "Esto es una descripción",
-        precio: "700",
-        unidadDeMedida: "kg",
+        name: "Jamón",
+        category: "fiambres",
+        description: "Esto es una descripción",
+        price: "700",
+        measurmentUnit: "kg",
         stock: 15,
         imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
         id: "003",
-        nombre: "Harina",
-        categoria: "cereales",
-        descripcion: "Esto es una descripción",
-        precio: "100",
-        unidadDeMedida: "kg",
+        name: "Harina",
+        category: "cereales",
+        description: "Esto es una descripción",
+        price: "100",
+        measurmentUnit: "kg",
         stock: 15,
         imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
     },
     {
         id: "004",
-        nombre: "Lentejas",
-        categoria: "legumbres",
-        descripcion: "Esto es una descripción",
-        precio: "200",
-        unidadDeMedida: "kg",
+        name: "Lentejas",
+        category: "legumbres",
+        description: "Esto es una descripción",
+        price: "200",
+        measurmentUnit: "kg",
         stock: 15,
         imagen: 'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png'
 
@@ -50,7 +50,7 @@ const products = [
 export const getProducts = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(categoryId? products.filter(prod => prod.categoria === categoryId) : products)
+            resolve(categoryId? products.filter(prod => prod.category === categoryId) : products)
         }, 1000)
     })
 }
