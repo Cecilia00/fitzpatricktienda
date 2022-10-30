@@ -18,7 +18,7 @@ const Navbar = () => {
                     
                     <Link to='/cart'><CartWidget/></Link>
                     <div className='listContainer'>
-                        <label className='hamburger_label' htmlFor="hamburger_checkbox"></label>
+                        <label className='hamburger_label' htmlFor="hamburger_checkbox">&#9776;</label>
                         <input type='checkbox' name="" id="hamburger_checkbox"></input>
                         <ul className="MenuBottonList">
                             <li className='MenuLi'> <NavLink to={`/category/fiambres`} className={({isActive}) => isActive ?  "active_navbar_link" : "navbar_link"} >Fiambres </NavLink> </li>
