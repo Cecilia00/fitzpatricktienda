@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
 import { addDoc, collection, query, where, documentId, writeBatch, getDocs } from 'firebase/firestore'
 import { db } from "../../service/firebase"
+import FormItem from "../FormItem/FormItem"
 
 const Checkout = () => {
     const { cart, total, count } = useContext(CartContext)
@@ -78,6 +79,7 @@ const Checkout = () => {
     return (
         <div>
             <h2>Ya casi terminamos!</h2>
+            <FormItem/>
             <form onSubmit={handleSubmit}>
                 <label>Nombre:
                     <input

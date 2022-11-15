@@ -38,9 +38,9 @@ const ItemDetailContainer = ({ setCart }) => {
     }
     else {
         return (
-            <>
+            <div className="ItemDetailContainer">
                 <ItemDetail {...product} setCart={setCart} />
-            </>
+            </div>
         )
     }
 

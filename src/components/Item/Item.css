@@ -11,6 +11,7 @@
     border-radius: 25px;
     padding: 13px;
     margin: 10px 20px;
+    justify-content: center;
 }
 .ItemName{
     text-align: center;
@@ -19,9 +20,9 @@
 }
 
 
-.ItemImagen{
-    width:80%;
+.ItemImage{
     max-width: 150px;
+    justify-self: center;
 }
 
 .link{
@@ -68,8 +69,7 @@
 
     }
 
-    .ItemImagen{
-        width:80%;
+    .ItemImage{
         max-width: 150px;
     }
 }
