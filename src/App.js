@@ -18,9 +18,11 @@ function App() {
             <Route path='/' element = {<ItemListContainer />} />
             <Route path='/category/:categoryId' element = {<ItemListContainer />} />
             <Route path='/item/:productId' element = {<ItemDetailContainer />} />
+            <Route path='/item/:*' element = {<h2>No hay productos que conincidan con este criterio. Haz click en el logo para volver al inicio.</h2>}/>
             <Route path='/cart' element = {<Cart />} />
             <Route path='/checkout' element = {<Checkout />} />
             <Route path='*' element = {<h2> ERROR 404 - NOT FOUND</h2>}/>
+
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
