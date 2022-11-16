@@ -11,7 +11,7 @@ const CartWidget = () => {
 
     
 
-    if (totalQuantity > 0) {
+    // if (totalQuantity > 0) {
         return (
             
                 <div className='DivCartWidget'>
@@ -22,6 +22,6 @@ const CartWidget = () => {
         )
     }
 
-}
+// }
 
 export default CartWidget
